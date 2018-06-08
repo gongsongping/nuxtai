@@ -11,9 +11,9 @@
             <nuxt-link  to="/weibo" >
             <div style='color:white;padding:8px;'> 微博  </div> 
             </nuxt-link>
-            <nuxt-link to="/weibo/write"  >
-              <div style='color:white;padding:8px;'>  <i style='color:white;' class='fa fa-plus'></i>  </div>        
-            </nuxt-link>
+            <a href="/nospider"  >
+              <div style='color:white;padding:8px;'> 可视化爬虫工具  </div>        
+            </a>
           </b-navbar-nav>
         </b-collapse>
     </b-navbar>
@@ -25,7 +25,8 @@
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -40,11 +41,13 @@ a {
 }
 
 a:hover {
-    background-color: tomato;
-    text-decoration: none;
+  background-color: tomato;
+  text-decoration: none;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
