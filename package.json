@@ -21,8 +21,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "bootstrap-vue": "^2.0.0-rc.2",
+    "cors": "^2.8.4",
+    "jsonfile": "^4.0.0",
     "nuxt": "^1.0.0",
+    "url-parse": "^1.4.1",
     "vue-infinite-loading": "^2.2.3"
   },
   "devDependencies": {
