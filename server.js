@@ -42,11 +42,11 @@ app.get('/test', function (req, res, next) {
 app.use(nuxt.render)
 
 
-
+//不能使用'0.0.0.0'
 new Builder(nuxt).build()
   .then(function () {
     console.log('-----build over------');
-    app.listen(3000, '0.0.0.0', function () {
+    app.listen(3000, function () {
       console.log('--nuxt------listen', 3000, '------');
     });
   })
