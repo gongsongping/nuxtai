@@ -17,21 +17,25 @@
 </template>
 
 <script>
-
 export default {
-  data () {
-    return { 
-      apps:['changeion','changev3','public2','staff2','language','cafe','zhongviet'],
-    }
+  data() {
+    return {
+      apps: [
+        "changeion",
+        "changev3",
+        "public2",
+        "staff2",
+        "language",
+        "cafe",
+        "zhongviet"
+      ]
+    };
   },
-  components: {
-  },
-  methods: {
-    
-  }
-}
+  //   layout: "nospider",
+  components: {},
+  methods: {}
+};
 </script>
 
 <style>
-  
 </style>

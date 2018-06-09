@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar sticky toggleable="md" type="dark" variant="info" style='padding:0 15px;'>
+    <b-navbar  toggleable="md" type="dark" variant="info" style='padding:0 15px;'>
 
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-collapse is-nav id="nav_collapse">
@@ -23,7 +23,9 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import "~bootstrap/scss/bootstrap.scss";
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
