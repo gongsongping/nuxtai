@@ -185,6 +185,9 @@ export default {
   },
   layout: "no",
   components: {},
+  //   mounted() {
+  //     window.location.reload();
+  //   },
   methods: {
     async getListDomString() {
       this.progress = 0;

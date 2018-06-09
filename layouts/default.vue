@@ -11,7 +11,7 @@
             <nuxt-link  to="/weibo" >
             <div style='color:white;padding:8px;'> 微博  </div> 
             </nuxt-link>
-            <a href="/nospider"  >
+            <a href="/nuxta/nospider"  >
               <div style='color:white;padding:8px;'> 可视化爬虫工具  </div>        
             </a>
           </b-navbar-nav>
