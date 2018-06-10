@@ -43,18 +43,33 @@ app.use(nuxt.render)
 
 
 //不能使用'0.0.0.0'
-new Builder(nuxt).build()
-  .then(function () {
-    console.log('-----build over------');
-    app.listen(3000, function () {
-      console.log('--nuxt------listen', 3000, '------');
-    });
-  })
-  .catch((error) => {
-    console.error(error)
-    process.exit(1)
-  })
+// new Builder(nuxt).build()
+//   .then(function () {
+//     console.log('-----build over------');
+//     app.listen(3000, function () {
+//       console.log('--nuxt------listen', 3000, '------');
+//     });
+//   })
+//   .catch((error) => {
+//     console.error(error)
+//     process.exit(1)
+//   })
+
+// Build only in dev mode
+if (config.dev) {
+  new Builder(nuxt).build()
+    .catch((error) => {
+      console.error(error)
+      process.exit(1)
+    })
+}
+
+// Listen the server
+app.listen(port, '0.0.0.0', function () {
+  console.log('--nuxt------listen', 3000, '------');
+})
 
 
-
-// nuxt.listen(3000, '0.0.0.0')
+// .then(() => {
+//   nuxt.showOpen()
+// })

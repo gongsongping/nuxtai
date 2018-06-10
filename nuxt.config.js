@@ -6,10 +6,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 
 module.exports = {
+  dev: (process.env.NODE_ENV !== 'production'),
   css: [
-    // 项目中的 CSS 文件
-    // 'bootstrap/dist/css/bootstrap.css',
-    // 'bootstrap-vue/dist/bootstrap-vue.css',
     // 项目中的 Sass 文件 @/assets ~/assets all is ok
     {
       src: '~assets/css/main.scss',
