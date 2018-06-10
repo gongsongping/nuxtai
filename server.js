@@ -66,7 +66,7 @@ if (config.dev) {
 
 // Listen the server
 app.listen(port, '0.0.0.0', function () {
-  console.log('--nuxt------listen', 3000, '------');
+  console.log('--nuxt------listen', port, '------');
 })
 
 
