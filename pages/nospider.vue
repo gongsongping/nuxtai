@@ -60,7 +60,7 @@
                     次数: <input @input="paginations()" type='number' v-model="rule.times" style="padding-left:5px;width:32px;">
                 </div>
 
-                <h5>3. url后段(没有可以空白)</h5>
+                <h5>3. url后段(选填)</h5>
                 <input @input="paginations()" type='text' v-model="rule.third">
                 <div v-show="rule.generatefi" style="background-color:#cceff6;margin:5px;padding:5px;font-size:0.8em;">
                     将产生如下urls, 检查是否如预期  <span @click="rule.generatefi=false" style="margin-left:30px;background-color:tomato;font-size:1.2em;display:inline-block;padding:3px;">确定</span><br>
@@ -461,6 +461,7 @@ export default {
   padding: 2px 10px;
   background-color: #b0e9f3;
   text-align: right;
+  color: rgb(226, 87, 63);
 }
 
 #list-p {
