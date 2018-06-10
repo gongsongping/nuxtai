@@ -1,0 +1,12 @@
+# @host = http://localhost:3000
+@host = http://gongsongping.com
+@url = https://www.zhihu.com/question/32322023
+###
+# @name getnapiurl
+POST {{host}}/napi/url 
+Content-Type: application/json
+
+{
+    # "url": "https://www.zhihu.com/question/32322023"
+    "url": "{{url}}"
+}
