@@ -21,7 +21,7 @@ app.use(cors());
 
 
 app.post('/napi/url', async function (req, res, next) {
-  console.log('----------body-parser', req.body.url);
+  console.log('----------body-parser', req.body.url, req.body);
   if (!req.body.url) {
     return
   }
