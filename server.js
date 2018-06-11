@@ -73,3 +73,4 @@ app.listen(port, '0.0.0.0', function () {
 // .then(() => {
 //   nuxt.showOpen()
 // })
+module.exports = app
