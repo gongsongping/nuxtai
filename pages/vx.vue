@@ -15,6 +15,7 @@ export default {
   fetch({ store }) {
     store.commit("increment");
   },
+  // middleware: "auth",
   computed: mapState(["counter"]),
   methods: {
     increment() {
